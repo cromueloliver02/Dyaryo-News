@@ -2,6 +2,7 @@
 :root {
     --primary-color: #ddd;
     --secondary-color: rgb(207, 18, 34);
+    --tertiary-color: rgb(216, 198, 39);
     --light-color: #fff;
     --dark-color: #333;
     --bg-color: #ccc;
@@ -149,7 +150,8 @@ img {
     box-shadow: var(--box-shadow);
 }
 .btn-light-outline {
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: transparent;
     color: var(--light-color);
     border-radius: 7.5px;
     border: 2px solid var(--light-color);
@@ -197,6 +199,9 @@ img {
 }
 .text-color {
     color: var(--secondary-color);
+}
+.text-tertiary {
+    color: var(--tertiary-color);
 }
 .page-container {
     display: grid;
@@ -464,7 +469,7 @@ img {
 }
 #header .showcase::before {
     content: '';
-    background: url('../img/featured.jpg')
+    background: url('../img/articles/health1.jpg')
         no-repeat
         center
         center/cover;
@@ -479,7 +484,7 @@ img {
     transition: all var(--transition-time);
 }
 #header .showcase:hover::before {
-    filter: blur(3px);
+    filter: blur(2px);
 }
 #header .showcase-container {
     z-index: 1;
